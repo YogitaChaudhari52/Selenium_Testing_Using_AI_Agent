@@ -61,12 +61,12 @@ public class AddUserStepDef {
         WebElement adminOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Admin']")));
         adminOption.click();
 
-        WebElement employeeName = driver.findElement(By.xpath("//input[@placeholder='Type for hints...']"));
+      //  WebElement employeeName = driver.findElement(By.xpath("//input[@placeholder='Type for hints...']"));
         WebElement username = driver.findElement(By.xpath("//label[text()='Username']/following-sibling::div/input"));
         WebElement password = driver.findElement(By.xpath("//label[text()='Password']/following-sibling::div/input"));
         WebElement confirmPassword = driver.findElement(By.xpath("//label[text()='Confirm Password']/following-sibling::div/input"));
 
-        employeeName.sendKeys("John Smith");
+    //    employeeName.sendKeys("John Smith");
         username.sendKeys("john.smith");
         password.sendKeys("Password123");
         confirmPassword.sendKeys("Password123");
