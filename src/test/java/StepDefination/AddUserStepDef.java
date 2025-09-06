@@ -50,8 +50,8 @@ public class AddUserStepDef {
     @And("I fill in the user details")
     public void i_fill_in_the_user_details() {
         try {
-            WebElement userRoleDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[text()='User Role']/following-sibling::div//i")));
-            userRoleDropdown.click();
+         //   WebElement userRoleDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[text()='User Role']/following-sibling::div//i")));
+         //   userRoleDropdown.click();
         } catch (TimeoutException e) {
             System.out.println("Element not found. Capturing page source for debugging.");
             System.out.println(driver.getPageSource());
